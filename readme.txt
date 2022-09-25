@@ -1,1 +1,2 @@
-This is a template repository for projects, packges, etc.
+
+This is a template repository for python-projects, python-packges, etc.
