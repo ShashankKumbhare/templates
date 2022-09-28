@@ -1,1 +1,3 @@
-# **/template_project_/
+**/.ipynb_checkpoints/*
+**/__pycache__/*
+**/.idea/*
