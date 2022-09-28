@@ -2,12 +2,12 @@
 # ==================================================================================================================================
 # START >> FILE INFO
 # ==================================================================================================================================
-# File        : template_pkg/template_subpkg/__init__.py
+# File        : template_pkg/__constants_subpkg__/_constants_submod.py
 # Author      : Shashank Kumbhare
 # Date        : --/--/----
 # email       : shashankkumbhare8@gmail.com
-# Description : This file is a __init__ file for python subpackage
-#               'template_pkg.template_subpkg'.
+# Description : This file is a python submodule for python subpackage
+#               'template_pkg.__constants_subpkg__'.
 # ==================================================================================================================================
 # END << FILE INFO
 # ==================================================================================================================================
@@ -15,34 +15,42 @@
 
 
 # ==================================================================================================================================
-# START >> SUBPACKAGE >> template_pkg.template_subpkg
+# START >> SUBMODULE >> template_pkg.__constants_subpkg__._constants_submod
 # ==================================================================================================================================
 # >>
 """
-This subpackage is created/used for/to
-SUBPACKAGE description SUBPACKAGE description SUBPACKAGE description SUBPACKAGE
-SUBPACKAGE description SUBPACKAGE description SUBPACKAGE description SUBPACKAGE
-SUBPACKAGE description SUBPACKAGE description.
+This submodule stores all the required constants for the package.
+These constants will then be shared across all the package modules & submodules.
 """
 
-_name_subpkg_ = __name__.partition(".")[-1]
-print("")
-print(f" + Adding subpackage '{_name_subpkg_}'...")
+_name_submod = __name__.partition(".")[-1]
+print(f"   + Adding submodule '{_name_submod}'...")
 
 # ==================================================================================
 # START >> IMPORTS
 # ==================================================================================
 # >>
-# SUBMODULES >>
-from .template_submod import template_submod_func
+from ..__dependencies_subpkg__ import *
 # <<
 # ==================================================================================
 # END >> IMPORTS
 # ==================================================================================
 
-print(" - Done!")
+
+# ==================================================================================================================================
+# START >> CONSTANTS
+# ==================================================================================================================================
+# >>
+CONSTANT1 = 1
+CONSTANT2 = 2
+# <<
+# ==================================================================================================================================
+# END >> CONSTANTS
+# ==================================================================================================================================
+
+print("   - Done!")
 
 # <<
 # ==================================================================================================================================
-# END << SUBPACKAGE << template_pkg.template_subpkg
+# END << SUBMODULE << template_pkg.__constants_subpkg__._constants_submod
 # ==================================================================================================================================

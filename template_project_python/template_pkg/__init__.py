@@ -23,10 +23,10 @@ PACKAGE description PACKAGE description PACKAGE description PACKAGE description
 PACKAGE description PACKAGE description.
 """
 
-_name_pkg_ = __name__.partition(".")[0]
+_name_pkg = __name__.partition(".")[0]
 print("")
 print(f"==========================================================================")
-print(f"Importing package '{_name_pkg_}'...")
+print(f"Importing package '{_name_pkg}'...")
 print(f"==========================================================================")
 
 # ==================================================================================
@@ -38,9 +38,9 @@ from .__dependencies_subpkg__ import *
 from .__constants_subpkg__ import *
 from .__auxil_subpkg__ import *
 # from .__data__ import *
-from .template_subpkg import *
+from ._template_subpkg import *
 # MODULES >>
-from .template_mod import template_mod_func
+from ._template_mod import _template_mod_func
 # <<
 # ==================================================================================
 # END >> IMPORTS
@@ -48,7 +48,7 @@ from .template_mod import template_mod_func
 
 print("")
 print(f"==========================================================================")
-print(f"Package '{_name_pkg_}' imported sucessfully !!")
+print(f"Package '{_name_pkg}' imported sucessfully !!")
 print(f"==========================================================================")
 print("")
 

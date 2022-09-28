@@ -2,7 +2,7 @@
 # ==================================================================================================================================
 # START >> FILE INFO
 # ==================================================================================================================================
-# File        : template_pkg/template_subpackage/template_submodule.py
+# File        : template_pkg/__dependencies_subpkg__/_dependencies_submod.py
 # Author      : Shashank Kumbhare
 # Date        : --/--/----
 # email       : shashankkumbhare8@gmail.com
@@ -15,7 +15,7 @@
 
 
 # ==================================================================================================================================
-# START >> SUBMODULE >> template_pkg.__dependencies_subpkg__.dependencies_submod
+# START >> SUBMODULE >> template_pkg.__dependencies_subpkg__._dependencies_submod
 # ==================================================================================================================================
 # >>
 """
@@ -26,8 +26,8 @@ dependencies are not to be imported in any module or submodule other than this
 submodule.
 """
 
-_name_submod_ = __name__.partition(".")[-1]
-print(f"   + Adding submodule '{_name_submod_}'...")
+_name_submod = __name__.partition(".")[-1]
+print(f"   + Adding submodule '{_name_submod}'...")
 
 # ==================================================================================
 # START >> IMPORTS
@@ -52,5 +52,5 @@ print("   - Done!")
 
 # <<
 # ==================================================================================================================================
-# END << SUBMODULE << template_pkg.__dependencies_subpkg__.dependencies_submod
+# END << SUBMODULE << template_pkg.__dependencies_subpkg__._dependencies_submod
 # ==================================================================================================================================

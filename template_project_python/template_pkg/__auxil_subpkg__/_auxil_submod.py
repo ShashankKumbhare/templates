@@ -2,7 +2,7 @@
 # ==================================================================================================================================
 # START >> FILE INFO
 # ==================================================================================================================================
-# File        : template_pkg/__auxil_subpkg__/auxil_submod.py
+# File        : template_pkg/__auxil_subpkg__/_auxil_submod.py
 # Author      : Shashank Kumbhare
 # Date        : --/--/----
 # email       : shashankkumbhare8@gmail.com
@@ -15,7 +15,7 @@
 
 
 # ==================================================================================================================================
-# START >> SUBMODULE >> template_pkg.__auxil_subpkg__.auxil_submod
+# START >> SUBMODULE >> template_pkg.__auxil_subpkg__._auxil_submod
 # ==================================================================================================================================
 
 # >>
@@ -26,9 +26,9 @@ SUBMODULE description SUBMODULE description SUBMODULE description SUBMODULE
 SUBMODULE description SUBMODULE description.
 """
 
-_name_subpkg_ = __name__.partition(".")[-2]
-_name_submod_ = __name__.partition(".")[-1]
-print(f"   + Adding submodule '{_name_submod_}'...")
+_name_subpkg = __name__.partition(".")[-2]
+_name_submod = __name__.partition(".")[-1]
+print(f"   + Adding submodule '{_name_submod}'...")
 
 # ==================================================================================
 # START >> IMPORTS
@@ -42,16 +42,16 @@ from ..__constants_subpkg__ import *
 
 
 # ==================================================================================================================================
-# START >> FUNCTION >> template_submod_func
+# START >> FUNCTION >> _template_submod_func
 # ==================================================================================================================================
 # >>
-def template_submod_func    ( p_p_p_p_1 = ""
+def _template_submod_func   ( p_p_p_p_1 = ""
                             , p_p_p_p_2 = ""
                             ) :
     
     """
     ================================================================================
-    START >> DOC >> template_submod_func
+    START >> DOC >> _template_submod_func
     ================================================================================
         
         GENERAL INFO
@@ -82,21 +82,21 @@ def template_submod_func    ( p_p_p_p_1 = ""
                 t_t_t_t t_t_t t_t_t_t_t t_t t_t_t_t t_t_t t_t_t_t_t t_t t_t_t_t t_t
     
     ================================================================================
-    END << DOC << template_submod_func
+    END << DOC << _template_submod_func
     ================================================================================
     """
-    _name_func_ = inspect.stack()[0][3]
-    print(f"This is a print from '{_name_subpkg_}.{_name_submod_}.{_name_func_}'{p_p_p_p_1}{p_p_p_p_2}.")
+    _name_func = inspect.stack()[0][3]
+    print(f"This is a print from '{_name_subpkg}.{_name_submod}.{_name_func}'{p_p_p_p_1}{p_p_p_p_2}.")
     
     return None
 # <<
 # ==================================================================================================================================
-# END << FUNCTION << template_submod_func
+# END << FUNCTION << _template_submod_func
 # ==================================================================================================================================
 
 print("   - Done!")
 
 # <<
 # ==================================================================================================================================
-# END << SUBMODULE << template_pkg.__auxil_subpkg__.auxil_submod
+# END << SUBMODULE << template_pkg.__auxil_subpkg__._auxil_submod
 # ==================================================================================================================================

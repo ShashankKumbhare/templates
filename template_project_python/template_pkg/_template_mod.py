@@ -2,7 +2,7 @@
 # ==================================================================================================================================
 # START >> FILE INFO
 # ==================================================================================================================================
-# File        : template_pkg/template_mod.py
+# File        : template_pkg/_template_mod.py
 # Author      : Shashank Kumbhare
 # Date        : --/--/----
 # email       : shashankkumbhare8@gmail.com
@@ -14,7 +14,7 @@
 
 
 # ==================================================================================================================================
-# START >> MODULE >> template_pkg.template_mod
+# START >> MODULE >> template_pkg._template_mod
 # ==================================================================================================================================
 # >>
 """
@@ -24,16 +24,16 @@ MODULE description MODULE description MODULE description MODULE description
 MODULE description MODULE description.
 """
 
-_name_mod_ = __name__.partition(".")[-1]
+_name_mod = __name__.partition(".")[-1]
 print("")
-print(f" + Adding module '{_name_mod_}'...")
+print(f" + Adding module '{_name_mod}'...")
 
 # ==================================================================================
 # START >> IMPORTS
 # ==================================================================================
 # >>
 from .__auxil_subpkg__ import *
-from .template_subpkg import *
+from ._template_subpkg import *
 # <<
 # ==================================================================================
 # END >> IMPORTS
@@ -41,16 +41,16 @@ from .template_subpkg import *
 
 
 # ==================================================================================================================================
-# START >> FUNCTION >> template_mod_func
+# START >> FUNCTION >> _template_mod_func
 # ==================================================================================================================================
 # >>
-def template_mod_func   ( p_p_p_p_1 = ""
+def _template_mod_func  ( p_p_p_p_1 = ""
                         , p_p_p_p_2 = ""
                         ) :
     
     """
     ================================================================================
-    START >> DOC >> template_mod_func
+    START >> DOC >> _template_mod_func
     ================================================================================
         
         GENERAL INFO
@@ -81,24 +81,22 @@ def template_mod_func   ( p_p_p_p_1 = ""
                 t_t_t_t t_t_t t_t_t_t_t t_t t_t_t_t t_t_t t_t_t_t_t t_t t_t_t_t t_t
     
     ================================================================================
-    END << DOC << template_mod_func
+    END << DOC << _template_mod_func
     ================================================================================
     """
     
-    _name_func_ = inspect.stack()[0][3]
-    print(f"This is a print from '{_name_mod_}.{_name_func_}'{p_p_p_p_1}{p_p_p_p_2}.")
-    print("The following line will print from template_subpkg.template_submod")
-    template_submod_func()
+    _name_func = inspect.stack()[0][3]
+    print(f"This is a print from '{_name_mod}.{_name_func}'{p_p_p_p_1}{p_p_p_p_2}.")
     
     return None
 # <<
 # ==================================================================================================================================
-# END << FUNCTION << template_mod_func
+# END << FUNCTION << _template_mod_func
 # ==================================================================================================================================
 
 print(" - Done!")
 
 # <<
 # ==================================================================================================================================
-# END << MODULE << template_pkg.template_mod
+# END << MODULE << template_pkg._template_mod
 # ==================================================================================================================================
