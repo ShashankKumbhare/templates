@@ -16,7 +16,7 @@
 # ==================================================================================================================================
 # START >> PACKAGE >> template_pkg
 # ==================================================================================================================================
-# >>
+# >>s
 """
 This package is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 PACKAGE description PACKAGE description PACKAGE description PACKAGE description
@@ -34,16 +34,16 @@ print(f"========================================================================
 # ==================================================================================
 # >>
 # SUBPACKAGES >>
-from .__dependencies_subpkg__ import *
-from .__constants_subpkg__ import *
-from .__auxil_subpkg__ import *
-# from .__data__ import *
-from ._template_subpkg import *
+# from .__dependencies_subpkg__ import *
+# from .__constants_subpkg__    import *
+# from .__auxil_subpkg__        import *
+# from .__data_subpkg__         import *
+from ._template_subpkg        import *
 # MODULES >>
-from ._template_mod import _template_mod_func
+from ._template_mod           import *
 # <<
 # ==================================================================================
-# END >> IMPORTS
+# END << IMPORTS
 # ==================================================================================
 
 print("")

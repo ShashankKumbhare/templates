@@ -2,12 +2,12 @@
 # ==================================================================================================================================
 # START >> FILE INFO
 # ==================================================================================================================================
-# File        : template_pkg/__auxil_subpkg__/_auxil_submod.py
+# File        : template_pkg/__data_subpkg__/_data_submod.py
 # Author      : Shashank Kumbhare
 # Date        : --/--/----
 # email       : shashankkumbhare8@gmail.com
 # Description : This file is a python submodule for python subpackage
-#               'template_pkg.__auxil_subpkg__'.
+#               'template_pkg.__data_subpkg__'.
 # ==================================================================================================================================
 # END << FILE INFO
 # ==================================================================================================================================
@@ -15,15 +15,11 @@
 
 
 # ==================================================================================================================================
-# START >> SUBMODULE >> template_pkg.__auxil_subpkg__._auxil_submod
+# START >> SUBMODULE >> template_pkg.__data_subpkg__._template_submod
 # ==================================================================================================================================
-
 # >>
 """
-This submodule is created/used for/to
-SUBMODULE description SUBMODULE description SUBMODULE
-SUBMODULE description SUBMODULE description SUBMODULE description SUBMODULE
-SUBMODULE description SUBMODULE description.
+This submodule is created to manage all the datasets related variables.
 """
 
 _name_subpkg = __name__.partition(".")[-2]
@@ -36,6 +32,7 @@ print(f"   + Adding submodule '{_name_submod}'...")
 # >>
 from ..__dependencies_subpkg__ import *
 from ..__constants_subpkg__    import *
+from ..__auxil_subpkg__        import *
 # <<
 # ==================================================================================
 # END << IMPORTS
@@ -43,13 +40,13 @@ from ..__constants_subpkg__    import *
 
 
 # ==================================================================================
-# START >> EXPORTS
+# START >> IMPORTS
 # ==================================================================================
 # >>
 __all__ = []
 # <<
 # ==================================================================================
-# END << EXPORTS
+# END << IMPORTS
 # ==================================================================================
 
 
@@ -97,6 +94,7 @@ def _template_submod_func   ( p_p_p_p_1 = ""
     END << DOC << _template_submod_func
     ================================================================================
     """
+    
     _name_func = inspect.stack()[0][3]
     print(f"This is a print from '{_name_subpkg}.{_name_submod}.{_name_func}'{p_p_p_p_1}{p_p_p_p_2}.")
     
@@ -110,5 +108,5 @@ print("   - Done!")
 
 # <<
 # ==================================================================================================================================
-# END << SUBMODULE << template_pkg.__auxil_subpkg__._auxil_submod
+# END << SUBMODULE << template_pkg.__data_subpkg__._template_submod
 # ==================================================================================================================================
