@@ -18,12 +18,12 @@
 # ==================================================================================================================================
 # >>s
 """
-This package is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 PACKAGE description PACKAGE description PACKAGE description PACKAGE description
 PACKAGE description PACKAGE description.
 """
 
-_name_pkg = __name__.partition(".")[0]
+__version__  = '1.0.0'
+_name_pkg    = __name__.partition(".")[0]
 print("")
 print(f"==========================================================================")
 print(f"Importing package '{_name_pkg}'...")
@@ -33,23 +33,19 @@ print(f"========================================================================
 # START >> IMPORTS
 # ==================================================================================
 # >>
-# SUBPACKAGES >>
-# from .__dependencies_subpkg__ import *
-# from .__constants_subpkg__    import *
-# from .__auxil_subpkg__        import *
-# from .__data_subpkg__         import *
-from ._template_subpkg        import *
 # MODULES >>
-from ._template_mod           import *
+from .                        import helpers
+# ELEMENTS >>
+from .model                   import *
 # <<
 # ==================================================================================
 # END << IMPORTS
 # ==================================================================================
 
-print("")
 print(f"==========================================================================")
 print(f"Package '{_name_pkg}' imported sucessfully !!")
 print(f"==========================================================================")
+print(f"version {__version__}")
 print("")
 
 # <<

@@ -25,7 +25,6 @@ MODULE description MODULE description.
 """
 
 _name_mod = __name__.partition(".")[-1]
-print("")
 print(f" + Adding module '{_name_mod}'...")
 
 # ==================================================================================

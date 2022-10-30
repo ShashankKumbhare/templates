@@ -26,8 +26,7 @@ dependencies are not to be imported in any module or submodule other than this
 submodule.
 """
 
-_name_submod = __name__.partition(".")[-1]
-print(f"   + Adding submodule '{_name_submod}'...")
+
 
 # ==================================================================================
 # START >> IMPORTS
@@ -38,17 +37,28 @@ import matplotlib.pyplot as plt
 import matplotlib.style as style
 style.use('classic')
 style.use('seaborn-white')
+from matplotlib.ticker import MultipleLocator
 import math
 import os
 import sys
 import inspect
-from progressbar import ProgressBar
+import glob                                 # library for loading images from a directory
+import matplotlib.image as mpimg
+import cv2
+import unittest
+from scipy.stats import norm, lognorm, truncnorm
+from scipy.stats import poisson
+from scipy.special import logsumexp
+from scipy import optimize
+from IPython.display import Markdown, display, Latex
+from textwrap import wrap
+import random
 # <<
 # ==================================================================================
 # END << IMPORTS
 # ==================================================================================
 
-print("   - Done!")
+
 
 # <<
 # ==================================================================================================================================

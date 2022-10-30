@@ -2,12 +2,12 @@
 # ==================================================================================================================================
 # START >> FILE INFO
 # ==================================================================================================================================
-# File        : template_pkg/_template_subpkg/_template_submod.py
+# File        : template_pkg/_template_subpkg/_plots_submod.py
 # Author      : Shashank Kumbhare
 # Date        : --/--/----
 # email       : shashankkumbhare8@gmail.com
 # Description : This file is a python submodule for python subpackage
-#               'template_pkg._template_subpkg'.
+#               'template_pkg._plots_subpkg'.
 # ==================================================================================================================================
 # END << FILE INFO
 # ==================================================================================================================================
@@ -15,14 +15,11 @@
 
 
 # ==================================================================================================================================
-# START >> SUBMODULE >> template_pkg._template_subpkg._template_submod
+# START >> SUBMODULE >> template_pkg._plots_subpkg._plots_submod
 # ==================================================================================================================================
 # >>
 """
-This submodule is created/used for/to
-SUBMODULE description SUBMODULE description SUBMODULE
-SUBMODULE description SUBMODULE description SUBMODULE description SUBMODULE
-SUBMODULE description SUBMODULE description.
+This submodule is created for the visualization and analyzsis of the dataset.
 """
 
 
@@ -34,8 +31,6 @@ SUBMODULE description SUBMODULE description.
 from ..__dependencies_subpkg__ import *
 from ..__constants_subpkg__    import *
 from ..__auxil_subpkg__        import *
-from ..__data_subpkg__         import *
-from .._plots_subpkg           import *
 # <<
 # ==================================================================================
 # END << IMPORTS
@@ -111,5 +106,5 @@ def _template_submod_func   ( p_p_p_p_1 = ""
 
 # <<
 # ==================================================================================================================================
-# END << SUBMODULE << template_pkg._template_subpkg._template_submod
+# END << SUBMODULE << template_pkg._plots_subpkg._plots_submod
 # ==================================================================================================================================
